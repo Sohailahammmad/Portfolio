@@ -1,0 +1,481 @@
+// Internet must be on.......
+
+
+<Doctype html>
+</html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Sohel Ahammad | A Web Developer based in Andhra Pradesh, India.
+  </title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Sohel Ahammad, HTML & CSS & JAVA" />
+  <link rel="stylesheet" href="index.css" />
+
+<style>
+*{
+box-sizing: border-box;
+
+}
+
+html,
+body   {
+  margin: 0px;
+  border: 0px;
+  line-height: 1;
+  font-size: 20px;
+background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4));
+    }
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+@font-face {
+    font-family: 'Hk Grotesk';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./fonts/Jost-Regular.ttf') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --font-size-small: 1.8rem;
+    --font-size-normal: 2.2rem;
+    --font-size-medium: 2.8rem;
+    --font-size-medium-1: 3.6rem;
+    --font-size-large: 5.5rem;
+    --font-size-huge: 7.5rem;
+    --font-stack: 'Hk Grotesk', sans-serif;
+
+    --line-height-normal: 1.7;
+    --line-height-small: 1.2;
+
+    --black: #000;
+    --pink: #ff3258;
+    --white: #f0e9f2;
+    --white-1: #e5e5e6da;
+
+
+    --container-max-width: 1180px;
+    --container-normal-width: 800px;
+    --container-medium-width: 700px; 
+    --container-small-width: 500px;
+
+    --gutter-huge: 12rem;
+    --gutter-medium: 6rem;
+    --gutter-normal: 3rem;
+    --gutter-small-1: 2.5rem;
+    --gutter-small: 2rem;
+
+    --border-light: 1px solid rgb(36, 35, 35);
+}
+
+/* --------------------------------------- */
+/* ----- Header ----- */
+/* --------------------------------------- */
+
+.header {
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('https://wallpaperaccess.com/full/291494.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+  height: 380px;  }
+
+/* --------------------------------------- */
+/* ----- Navigation ----- */
+/* --------------------------------------- */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--gutter-normal) 0;
+    color: #ffffff;
+    font-size: 20px;
+    align-item: right;
+
+}
+
+.nis {
+    display: flex;
+    list-style: none;
+}
+
+.ni:not(:last-child) {
+    margin-right: var(--gutter-medium);
+}
+
+@media(max-width: 500px) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 200px) {
+    .nav {
+        justify-content: center;
+    }
+}
+@media(max-width: 300px) {
+    .nav {
+        justify-content: center;
+    }
+}
+@media(max-width: 400px) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .ni:not(:last-child) {
+        margin-right: var(--gutter-normal);
+    }
+}
+
+@media(max-width: 300px) {
+    .nav {
+        font-size: var(--font-size-small);
+    }
+}
+
+.nav__link {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    display: inline-block;
+    height: 1rem;
+    background: var(--white);
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.nav__link:hover {
+    color: var(--pink);
+}
+
+.nav__link:hover::after {
+    right: 0;
+    height: 3px;
+    background: var(--pink);
+}
+
+.wo:hover {
+    color: var(--white);
+transition: all 0.2s;
+background: var(--pink);
+}
+.wo{
+
+    position: relative;
+    display: inline-block;
+    padding: .4rem;
+    color: inherit;
+color: #FFF;
+border-bottom: 1px solid var(--pink);
+text-decoration: none;
+}
+.row{
+margin: 20px;
+padding: 20px;
+border: 20px;
+}
+.row1{
+margin: 30px;
+padding: 50px;
+border: 40px;
+border-bottom: 5px;
+
+}
+
+.row2{
+margin: 16px;
+padding: 12px;
+border: 1px;
+}
+.w{
+margin: 30px;
+}
+.row3{
+margin: 30px;
+padding: 50px;
+border: 40px;
+border-bottom: 5px;
+}
+.k{
+margin-left: 600px;
+padding: 40px;
+border: 1px;
+font-family: "Trirong", serif;
+}
+.btn{
+color: #FFF;
+text-decoration: none;
+border: 20px;
+margin:10px;
+padding: 3px;
+ right: 0;
+    height: 5px;
+border-bottom: 1px solid var(--pink);
+    }
+.btn:hover{
+    color: var(--white);
+transition: all 0.99s;
+background: var(--pink);
+}
+
+
+
+
+.ci{
+
+margin-left: 30px;
+padding: 40px;
+border: 1px;
+margin-right:50px;
+}
+.cssmarquee {
+height: 60px;
+overflow: hidden;
+position: relative;
+font-family: "Audiowide", sans-serif;
+}
+span{color: #FFF;}
+
+.cssmarquee span {
+position: absolute;
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 30px;
+text-align: left;
+animation: cssmarquee 5s ease-out;
+}
+@keyframes cssmarquee {
+0% {
+transform: translateX(200%);
+}
+100% {
+transform: translateX(0%);
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+footer {
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 30px;
+  font-family: "Trirong", serif;
+}
+
+.fa{
+padding: 10px;
+font-size: 10px;
+width: 25px;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.fa:hover{
+padding: 35px;
+font-size: 27px;
+width: 35px;
+opacity: 0.9;
+height: 50px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-github{
+  background: #2c4762;
+  color: white;
+}
+
+
+   </style>
+</head>
+<body>
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nis">
+<li class="ni">
+<a href="#home" class="nav__link">Home</a>
+</li>
+
+<li class="ni">
+<a href="#work" class="nav__link">Work</a>
+</li>
+          <li class="ni">
+<a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="ni">
+<a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+<h1> Welcome to My Portfolio Website! </h1>
+
+    </div>
+</header>
+
+
+
+
+<main>
+Hi,There!<h1>I Am
+<div class="cssmarquee">
+ &nbsp<span> Sohel Ahammad</span></h1>
+</div>
+
+    <section class="work" id="work">
+      <div class="row1">
+        <h2>My Work</h2>
+        
+          <!-- Each div with the work__box class is a project. -->
+
+              <h3>Portfolio Template</h3>
+              <p>
+                A free Open Source Portfolio for anyone to use for free.
+              </p>
+              <ul class="w">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                
+              </ul>
+
+              <div class="wl">
+                <a href="https://github.com/Sohailahammmad" target="_blank" class="wo">
+                  Visit Site <span>&rarr;</span>
+                </a>
+
+                <a href="https://github.com/Sohailahammmad" title="View Source Code" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
+           </div>
+
+              <!-- ***** About ***** -->
+
+      <div class="row2" id="about">
+        <h2>About Me</h2>
+
+          <div class="imgp">
+            <!-- Add a nice photo of yourself -->
+            <img class="" src="C:\Users\Lenovo\Downloads\781948.jpg" alt="Sohel Ahammad" style="width:100px;height:100px;margin-top:50px;margin-left:40px;float:left;" />
+          </div>
+            <!-- Replace the below paragraph with info about yourself -->
+            <p class="k">
+              I'm Sohel Completed MCA in 2022. I'm looking for changing my carrer ability to work with JAVA & HTML & CSS. Can Work underpressure and make the best of any situation. Passionate with great interpersonal and communication skills. </p>
+            <!-- Provide a link to your resume -->
+            <a href="<a href="https://drive.google.com/file/d/1EPH28KlJr-1zjz019aNNwNrw1RC62uwA/view?usp=sharing" class="btn">My Resume</a>
+          </div>
+
+      
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row3">
+      <h2>Get in Touch</h2>
+      <div class="ci">
+        <p>
+          Are you looking for a fast-performing and user-friendly website to
+          represent your product or business? or looking for any kind of
+          consultation? or want to ask questions? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
+        </p><br>
+        <!-- Replace the email with yours -->
+        <a href="mailto:sohel818786@gmail.com" class="btn">GMAIL</a>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+
+
+<footer>
+<h2>Contact Me</h2><br>
+<a href="https://drive.google.com/file/d/1tpwIjTInDJ3YkLqsH8QJCySTJHwFWe_Q/view?usp=sharing">
+<img src="https://drive.google.com/file/d/1tpwIjTInDJ3YkLqsH8QJCySTJHwFWe_Q/view?usp=sharing" alt="I am Sohel Ahammad" width="60px" height="90px">
+</a><br>
+
+<div id="Down">
+<center><a href="https://m.facebook.com/100052789565175/"><i class="fa fa-facebook"></i></a>
+<a href="https://www.linkedin.com/mwlite/in/sohel-ahammad-6219a421a"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.instagram.com/sohel.ahammad.73/"><i class="fa fa-instagram"></i></a>
+<a href="https://github.com/Sohailahammmad"><i class="fa fa-github"></i></a></center>
+<br><center><p>All Rights Are Reserved Copyright © 2022-2060.</p>
+<br>Privacy Policy | Cookies Policy | Terms of Use<center>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
