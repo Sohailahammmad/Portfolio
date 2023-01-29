@@ -11,6 +11,18 @@ body   {
   font-size: 20px;
 background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4));
     }
+.borderimg
+{
+ height: 200px;
+width: 500px;
+
+}
+.BI{
+border-radius: 10;
+height: 200px;
+width: 500px;
+
+}
 
 body {
   font-family: "Courier New", Courier, monospace;
@@ -78,7 +90,7 @@ body {
     background-position: center;
     background-attachment: fixed;
 
-  height: 380px;  }
+  height: 390px;  }
 
 /* --------------------------------------- */
 /* ----- Navigation ----- */
@@ -216,6 +228,11 @@ padding: 40px;
 border: 1px;
 font-family: "Trirong", serif;
 }
+.re{
+margin-left: 30px;
+
+
+}
 .btn{
 color: #FFF;
 text-decoration: none;
@@ -231,16 +248,23 @@ border-bottom: 1px solid var(--pink);
 transition: all 0.99s;
 background: var(--pink);
 }
+.ls{
+letter-spacing: 3px;
+}
 
+.pt{
 
-
+margin: 20px;
+border: 1px;
+margin-right: 500px;
+}
 
 .ci{
 
 margin-left: 30px;
 padding: 40px;
 border: 1px;
-margin-right:50px;
+margin-right:200px;
 }
 .cssmarquee {
 height: 60px;
